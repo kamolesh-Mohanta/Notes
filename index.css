@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    background: linear-gradient(to left, lightblue,lightgreen);
+}
+.notes{
+  padding: 15px;
+   border-radius: 15px;
+   resize: none;
+   box-shadow: 0 0 3px rgba(0,0,0,0.3);
+   font-size: 20px;
+   color: rgb(0, 0, 117);
+   font-weight: 600;
+   border: none;
+   outline: none;
+   background: rgb(255,255, 255,0.1);
+   box-sizing: border-box;
+    height: 280px;
+    width: 280px;
+}
+.notes ::placeholder{
+    color: gray;
+    opacity: 30%;
+}
+.notes:hover,
+.notes:focus{
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    transition: all 300ms ease;
+}
+.note h2{
+   text-align: center;
+   color: blue;
+   font-weight: 400;
+   font-size: 30px;
+}
+.note p{
+    text-align: center;
+    color: blue;
+    font-size: 22px;
+}
+
+.card{
+    /* width: 300px;
+    height: 300px;
+    background-color: rgba(195, 164, 164, 0.929);
+    border-radius: 20px;
+   text-align: center;
+margin: 50px;
+   
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(0,0,0,0.7);
+    box-sizing: border-box; */
+     display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 60px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 280px;
+    color: rgba(0,0,0, 0.3);
+    
+}
+.btn:hover{
+  background: rgba(255, 255, 255, 0.55);
+ color: rgba(0,0,0,0.6);
+ transition:all 1s ease;
+}
